@@ -3,9 +3,11 @@
 // const multi = (a=2, b=0) =>
 // {
 //     var c =  a*b
+
 //     return c
 // }
 // console.log(`Product of 2 numbers : ` + multi(9 , 4))
+
 
 // const square = (a) => 
 // {
@@ -13,6 +15,7 @@
 // }
 
 // console.log(`Square of a number =  ` + square(4))
+
 
 // const nowdate = () =>
 // {
@@ -78,22 +81,77 @@
 
 
 
-let salary = 4000;
-var bonus = (salary > 5000)? "Salary is Greatr then (5000) hence bounus = 1000" 
-            :(salary < 5000)? "Salary is less then (5000) hence bounus = 500"
-            :(salary == 5000)? "Salary is Equal to (5000) hence bounus = 100"
-            :'invalid'
-console.log(salary)
-console.log(bonus)
+// let salary = 4000;
+// var bonus = (salary > 5000)? "Salary is Greatr then (5000) hence bounus = 1000" 
+//             :(salary < 5000)? "Salary is less then (5000) hence bounus = 500"
+//             :(salary == 5000)? "Salary is Equal to (5000) hence bounus = 100"
+//             :'invalid'
+// console.log(salary)
+// console.log(bonus)
+
+
+
+//  var students = ['shehla', 'mina' , 'samina', 'sadia']
+//  var look = students.filter((item) => {
+// return item == 'mina'     
+
+// })
+// console.log(look)
+
+// ==================   spread Operator   ==============================
+var s = [1,2,3,4,5,6]
+var h = [...s]
+h[2] = 708
+ console.log(s)
+ console.log(h)
+ //------------------------------------------------
+ var shehla = {Name : 'shehla', age: 42}
+ var newobj = {...shehla}
+ newobj.gender = "female"
+ shehla.subject = "Computer"
+ 
+ console.log(shehla)
+ console.log(newobj)
+//------------------------------------------------
+
+// var a = ["hiba","is","girl"]
+// console.log("a", a)
+
+// const  sum = (a,b,c) => {
+//     return a+b+c   
+// }
+// var b = sum (...a)
+// console.log("b   ", b)
+//------------------------------------------------
+// var sum = (a, ...b) => {
+// var num2 = b.reduce((item , index) =>{
+//     return item + index
+// })
+//  num2 = num2+a
+//  return num2
+// }
+// var num3 = sum(2,4,5,6)
+// console.log("num3", num3)
+//------------------------------------------------
+var sub = (a, ...b) => {
+var num2 = b.reduce((item , index) =>{
+    return item + index
+})
+ num2 = num2-a
+ return num2
+}
+var subtract = sub(2,4,5,6)
+console.log("subtract", subtract)
 
 
 
 
 
 
-    
 
 
+
+ 
 //https://docs.google.com/presentation/d/1scEVd9pD5eqw-0SBRTLwhxB0v2DzfIsWGzDPlVS7eqI/edit#slide=id.p
 
 
