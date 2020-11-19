@@ -142,6 +142,67 @@ var num2 = b.reduce((item , index) =>{
 }
 var subtract = sub(2,4,5,6)
 console.log("subtract", subtract)
+//=====================================================br
+
+var obj = { name:'shehla' , education: 'Graduate', nationality: 'Pakistani'}
+var {name,education, nationality} = obj
+console.log(`My Name is  ${name} 
+My Education Is ${education}
+My Nationality is ${nationality}`)
+//--------------------------------------------------------------
+// try {
+    //     addname()
+    // }
+    // catch(e){
+        //     console.log(e)
+        // }
+//--------------------------------------------------------------
+// var myClick = () => {
+//     setTimeout(displayalert,1000)
+// }
+
+// let a = 0;
+// let displayalert = () => {
+//     a++;
+//     document.getElementById('aa').innerHTML = a;
+// }
+//----------------Start Time----------------------------------------------
+
+var s = setInterval(displayalert,1000)
+var myClick = () => {
+}
+let full;
+let a = 0;
+let displayalert = () => {
+    a++;
+    var d = new Date()
+    document.getElementById('aa').innerHTML = a;
+    
+    var date = d.getDate()
+    var day = d.getMonth()+1
+    var year = d.getFullYear()
+    var hours = d.getHours()
+    var min = d.getMinutes()
+    var sec = d.getSeconds()
+
+    full = `Date of Today : 
+    ` + date + " / " + day + " / " + year+ "      Time =   " + hours +":"+ min +":"+sec
+    
+    document.getElementById('dd').innerHTML = full;
+
+    
+     }
+//=====================Stop Time======================================
+// var stop = () => {
+   //var s = setInterval(displayalert1,1000)
+//}
+ 
+// // let stop = () => {
+// //     clearInterval(s)
+ 
+//       }
+
+    
 
 
 
@@ -151,6 +212,9 @@ console.log("subtract", subtract)
 
 
 
+
+
+        
  
 //https://docs.google.com/presentation/d/1scEVd9pD5eqw-0SBRTLwhxB0v2DzfIsWGzDPlVS7eqI/edit#slide=id.p
 
